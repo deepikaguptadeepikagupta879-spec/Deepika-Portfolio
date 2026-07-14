@@ -1,0 +1,364 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:#fff;
+line-height:1.7;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+ul{
+list-style:none;
+}
+
+header{
+width:100%;
+position:fixed;
+top:0;
+left:0;
+background:#111827;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.4);
+}
+
+.navbar{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 30px;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#fff;
+}
+
+.logo span{
+color:#38bdf8;
+}
+
+.nav-links{
+display:flex;
+gap:28px;
+}
+
+.nav-links a{
+font-size:16px;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+padding:120px 30px 50px;
+gap:60px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h3{
+font-size:22px;
+color:#38bdf8;
+}
+
+.hero-text h1{
+font-size:60px;
+margin:15px 0;
+}
+
+.hero-text h2{
+font-size:28px;
+font-weight:500;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:17px;
+color:#cbd5e1;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.btn,
+.btn2{
+padding:14px 32px;
+border-radius:8px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn{
+background:#38bdf8;
+color:#000;
+}
+
+.btn:hover{
+background:#0ea5e9;
+}
+
+.btn2{
+border:2px solid #38bdf8;
+color:#38bdf8;
+}
+
+.btn2:hover{
+background:#38bdf8;
+color:#000;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+
+.hero-image img{
+width:340px;
+height:340px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid #38bdf8;
+box-shadow:0 0 40px rgba(56,189,248,.4);
+}
+
+section{
+padding:90px 30px;
+}
+
+.title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.title h2{
+font-size:38px;
+color:#38bdf8;
+position:relative;
+display:inline-block;
+}
+
+.about-content{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.about-content p{
+font-size:18px;
+color:#cbd5e1;
+line-height:1.9;
+}
+
+.skills{
+text-align:center;
+}
+
+.skill-box{
+display:inline-block;
+background:#1e293b;
+padding:14px 28px;
+margin:12px;
+border-radius:10px;
+font-weight:600;
+transition:.3s;
+border:1px solid transparent;
+}
+
+.skill-box:hover{
+background:#38bdf8;
+color:#000;
+transform:translateY(-5px);
+}
+
+.education,
+.experience,
+.projects,
+.contact{
+max-width:1100px;
+margin:auto;
+}
+
+.edu-card,
+.exp-card,
+.project-card,
+.contact-box{
+background:#1e293b;
+padding:30px;
+margin-bottom:25px;
+border-radius:15px;
+transition:.3s;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+.edu-card:hover,
+.exp-card:hover,
+.project-card:hover,
+.contact-box:hover{
+transform:translateY(-8px);
+}
+
+.edu-card h3,
+.exp-card h3,
+.project-card h3{
+color:#38bdf8;
+margin-bottom:12px;
+}
+
+.edu-card span{
+display:block;
+margin-top:10px;
+color:#94a3b8;
+}
+
+.project-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.contact-box{
+text-align:center;
+}
+
+.contact-box p{
+margin:15px 0;
+font-size:18px;
+}
+
+footer{
+background:#111827;
+padding:25px;
+text-align:center;
+margin-top:50px;
+}
+
+footer p{
+color:#cbd5e1;
+font-size:15px;
+}
+
+@media(max-width:992px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+padding-top:140px;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.hero-text h2{
+font-size:24px;
+}
+
+.hero-image img{
+width:280px;
+height:280px;
+}
+
+.nav-links{
+display:none;
+}
+
+.menu-btn{
+display:block;
+}
+
+.title h2{
+font-size:32px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-text h1{
+font-size:36px;
+}
+
+.hero-text h2{
+font-size:20px;
+}
+
+.hero-text p{
+font-size:16px;
+}
+
+.btn,
+.btn2{
+display:block;
+width:100%;
+text-align:center;
+margin-bottom:15px;
+}
+
+.hero-image img{
+width:220px;
+height:220px;
+}
+
+.skill-box{
+display:block;
+width:100%;
+margin:10px 0;
+}
+
+}
+
+.nav-links.active{
+display:flex;
+flex-direction:column;
+position:absolute;
+top:75px;
+left:0;
+width:100%;
+background:#111827;
+padding:20px 0;
+text-align:center;
+}
+
+.hidden{
+opacity:0;
+transform:translateY(50px);
+transition:all .8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
